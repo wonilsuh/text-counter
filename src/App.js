@@ -12,7 +12,7 @@ import Inputs from "./components/Inputs/Inputs.js";
 
 const wordCountFunc = (str) =>
   str.split(" ").filter(function (n) {
-    return n != "";
+    return n !== "";
   }).length;
 
 class App extends React.Component {
