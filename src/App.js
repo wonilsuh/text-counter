@@ -58,6 +58,7 @@ class App extends React.Component {
               <a
                 href="https://github.com/wonilsuh/text-counter"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
               </a>
