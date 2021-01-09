@@ -52,7 +52,17 @@ class App extends React.Component {
         />
         <Inputs text={this.state.text} onValueChange={this.onInputChange} />
         <div className="footer">
-          <div className="inner-wrap">@wonilsuh</div>
+          <div className="inner-wrap">
+            <div className="element">@wonilsuh</div>
+            <div className="element">
+              <a
+                href="https://github.com/wonilsuh/text-counter"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     );
