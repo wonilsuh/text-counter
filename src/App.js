@@ -9,7 +9,6 @@ import "./App.scss";
 
 import Counters from "./components/Counters/Counters.js";
 import Inputs from "./components/Inputs/Inputs.js";
-import Button from "carbon-components-react";
 
 const wordCountFunc = (str) =>
   str.split(" ").filter(function (n) {

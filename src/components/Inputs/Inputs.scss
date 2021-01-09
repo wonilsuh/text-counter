@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
 .inputs{
+
   padding:0rem;
   display:flex;
   flex-direction: row;
@@ -8,6 +11,7 @@
   max-width:960px;
 
   textarea{
+    font-family: 'IBM Plex Mono', monospace;
     width:100%;
     border:none;
     padding:1rem;

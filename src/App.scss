@@ -1,4 +1,4 @@
-/*@import "carbon-components/css/carbon-components.min.css";*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
 
 html,
 body,
@@ -11,11 +11,11 @@ body,
 
 html,
 body {
+  font-family: 'IBM Plex Sans', "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
 .app-container {
-  font-family: sans-serif;
   text-align: 0.875remter;
   height: 100%;
 }
