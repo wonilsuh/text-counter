@@ -1,15 +1,20 @@
 import React from "react";
 
-import {
-  Header,
-  HeaderName
-} from "carbon-components-react/lib/components/UIShell";
+// import {
+//   Header,
+//   HeaderName
+// } from "carbon-components-react/lib/components/UIShell";
 
-import "./styles.css";
+import "./App.scss";
 
 import Counters from "./components/Counters/Counters.js";
 import Inputs from "./components/Inputs/Inputs.js";
-import { Button } from "carbon-components-react";
+import Button from "carbon-components-react";
+
+const wordCountFunc = (str) =>
+  str.split(" ").filter(function (n) {
+    return n != "";
+  }).length;
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +30,7 @@ class App extends React.Component {
   onInputChange(e) {
     var text = e.target.value;
 
-    var wordCount = text.trim().split(/\s+/).length;
+    var wordCount = wordCountFunc(text);
     var charCount = text.length;
     var charNoSpaceCount = text.replace(/ /g, "").length;
 
@@ -40,13 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <div className="app-header-wrap">
-          <Header aria-label="Counter">
-            <HeaderName href="#" prefix="">
-              Text Counter
-            </HeaderName>
-          </Header>
-        </div>
+        <div className="app-header-wrap">Text counter</div>
         <Counters
           wordCount={this.state.wordCount}
           charCount={this.state.charCount}
@@ -54,7 +53,7 @@ class App extends React.Component {
         />
         <Inputs text={this.state.text} onValueChange={this.onInputChange} />
         <div className="footer">
-          <div>@wonilsuh</div>
+          <div className="inner-wrap">@wonilsuh</div>
         </div>
       </div>
     );

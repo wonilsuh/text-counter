@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Counters.css";
+import "./Counters.scss";
 
 import Counter from "../Counter/Counter.js";
 
